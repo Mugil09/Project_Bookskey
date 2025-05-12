@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookskey</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Poppins Text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav_bar">
+        <h1>BOOKSKEY</h1>
+    </div>
+
+    <div class="container">
+        <div class="book_container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>By Robert T. Kiyosaki</h5>
+            <p>A personal finance classic that contrasts the mindset and financial strategies of the author's two
+                "dads"—his biological father (Poor Dad) and the father of his best friend (Rich Dad)—to teach lessons on
+                wealth-building, investing, and achieving financial independence.</p>
+            <button id="container-delete-btn" onclick="delete_container(event)">Delete</button>
+        </div>
+        <div class="book_container">
+            <h2>Atomic Habits</h2>
+            <h5>By James Clear</h5>
+            <p>Atomic Habits is a transformative guide to building good habits and breaking bad ones through small,
+                incremental changes. James Clear explains how tiny improvements, made consistently over time, can
+                compound into remarkable results.Drawing from psychology.</p>
+            <button id="container-delete-btn" onclick="delete_container(event)">Delete</button>
+        </div>
+    </div>
+
+    <button class="add-button">+</button>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" name="" id="book-input" placeholder="Name">
+            <input type="text" name="" id="author-input" placeholder="Author Name">
+            <textarea name="" id="description-input" placeholder="Short Description"></textarea>
+            <button id="popup-add-btn">Add</button>
+            <button id="popup-cancel-btn">Cancel</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
